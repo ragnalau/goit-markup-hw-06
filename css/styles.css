@@ -861,8 +861,8 @@ a {
   height: 120px;
 }
 
-.modal-form__position input:focus + svg,
-.modal-form__position input:hover + svg {
+.modal-form__position input:focus + .icons,
+.modal-form__position input:hover + .icons {
   fill: #2196f3;
 }
 
