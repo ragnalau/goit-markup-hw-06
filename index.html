@@ -321,11 +321,10 @@
       <div class="footer__subscribe">
         <h2 class="footer__title">SUNSCRIBE TO THE NEWSLETTER</h2>
         <form class="footer__subscribe-form" name="footer__subscribe-form">
-          <input name="email" type="email"
-            class="footer__subscribe-form-input" placeholder="E-mail" />
+          <input name="email" type="email" class="footer__subscribe-form-input" placeholder="E-mail" />
           <button class="subscribe__button button" type="submit">Subscribe <svg class="icon-send">
-            <use href="icons/symbol-defs.svg#icon-send"></use>
-          </svg></button></button>
+              <use href="icons/symbol-defs.svg#icon-send"></use>
+            </svg></button></button>
         </form>
       </div>
     </div>
@@ -338,37 +337,39 @@
       <h2 class="modal-title">Leave your information and we'll call you back</h2>
       <form name="modal-form" class="modal-form">
         <label class="modal-form__position">
-          Name 
-          <svg class="icon-person">
+          Name
+          <svg class="icons icon-person" width="12px" height="12px">
             <use href="icons/symbol-defs.svg#icon-person"></use>
           </svg>
-          <input type="text" name="username" class="modal-form__input input-name" />
+          <input type="text" name="username" class="modal-form__input input-name" required />
         </label>
         <label class="modal-form__position">
-          Telephone 
-          <svg class="icon-phone">
+          Telephone
+          <svg class="icons icon-phone" width="15px" height="12px">
             <use href="icons/symbol-defs.svg#icon-phone-black"></use>
           </svg>
-          <input type="tel" name="phone"
-            class="modal-form__input input-phone" />
-          </label>
+          <input type="tel" name="phone" pattern="[0-9]{10}" required class="modal-form__input input-phone" />
+        </label>
         <label class="modal-form__position">
           E-mail
-          <svg class="icon-email">
+          <svg class="icons icon-email" width="12px" height="12px">
             <use href="icons/symbol-defs.svg#icon-email-black"></use>
           </svg>
-          <input type="email" name="useremail" class="modal-form__input input-email" />
+          <input type="email" name="useremail" required class="modal-form__input input-email" />
         </label>
         <label class="modal-form__position">
           Comments
           <textarea name="mesaj" placeholder="Enter the text" class="modal-form__comments" rows="5"></textarea>
         </label>
-<label class="modal-form__position modal-form__checked"><input type="checkbox" name="agree" value="agree"
-    class="modal-form__input" />
-  I agree with the letter and accept the
-  <a href="#" class="condition">Terms and Conditions</a>
-</label>
-<button type="submit" class="modal-form__btn">Send 
+        <label class="modal-form__position modal-form__checked">
+          <input type="checkbox" name="agree" value="agree" class="modal-form__input" />
+          <!-- <span cllass="replace-checkbox modal-checkbox__position">
+    <svg width="11px" height="8px"><use href="icons/symbol-defs.svg#icon-checked"></use></svg>
+  </span> -->
+          I agree with the letter and accept the
+          <a href="#" class="condition">Terms and Conditions</a>
+        </label>
+        <button type="submit" class="modal-form__btn">Send
       </form>
     </div>
   </div>
